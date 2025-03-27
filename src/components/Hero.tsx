@@ -8,13 +8,17 @@ export default function Hero() {
     <div className="relative h-screen overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <Image
-          src="/images/hero-bg.jpg"
-          alt="Swimming Pool"
-          fill
-          className="object-cover"
-          priority
-        />
+        <div className="relative w-full h-full">
+          <Image
+            src="/images/hero-bg.jpg"
+            alt="Swimming Pool"
+            quality={100}
+            width={1920}
+            height={1080}
+            className="object-cover w-full h-full"
+            priority
+          />
+        </div>
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/40 via-blue-800/30 to-blue-700/40"></div>
       </div>
 
@@ -80,14 +84,14 @@ export default function Hero() {
           <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 animate-spin-slow"></div>
           {/* Logo Container */}
           <div className="absolute inset-2 rounded-full bg-white overflow-hidden">
-            <Image
-              src="/images/logo.jpg"
-              alt="Arhan Yüzme Akademisi Logo"
-              width={192}
-              height={192}
-              className="object-cover w-full h-full"
-              priority
-            />
+            <div className="relative w-full h-full">
+              <img
+                src="/images/logo.jpg"
+                alt="Arhan Yüzme Akademisi Logo"
+                className="w-full h-full object-cover rounded-full"
+                loading="eager"
+              />
+            </div>
           </div>
         </motion.div>
 
