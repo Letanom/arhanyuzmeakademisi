@@ -83,8 +83,9 @@ export default function Hero() {
             <Image
               src="/images/logo.jpg"
               alt="Arhan Yüzme Akademisi Logo"
-              fill
-              className="object-cover"
+              width={192}
+              height={192}
+              className="object-cover w-full h-full"
               priority
             />
           </div>
