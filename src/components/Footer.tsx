@@ -124,7 +124,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4">İletişim</h3>
             <p className="mb-2">Telefon: +90 555 555 55 55</p>
-            <p className="mb-2">Email: info@arhanyuzme.com</p>
+            <p className="mb-2">Email: arhanswim@gmail.com</p>
             <p>Adres: İstanbul, Türkiye</p>
           </div>
           <div>
