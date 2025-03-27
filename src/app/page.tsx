@@ -24,7 +24,9 @@ export default function Home() {
         <PhotoGallery />
         <Team />
         <Testimonials />
-        <Contact />
+        <section id="contact">
+          <Contact />
+        </section>
         <Footer />
       </div>
     </div>
