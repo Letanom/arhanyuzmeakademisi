@@ -95,7 +95,7 @@ export default function Testimonials() {
           </h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto my-4"></div>
           <p className="mt-4 text-lg text-gray-600">
-            Öğrencilerimiz ve velilerden Arhan Yüzme Akademisi'ndeki deneyimleri hakkında yorumlar.
+            Öğrencilerimiz ve velilerden Arhan Yüzme Akademisi&apos;ndeki deneyimleri hakkında yorumlar.
           </p>
         </motion.div>
         
