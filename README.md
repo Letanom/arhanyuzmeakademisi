@@ -97,3 +97,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Swimming images: Placeholder images (replace with your own)
 - Icons: Heroicons
 - 3D Models: Created with Three.js
+# arhanyuzmeakademisi
