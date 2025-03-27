@@ -102,7 +102,7 @@ export default function Testimonials() {
         <div className="relative max-w-5xl mx-auto">
           {/* Large quote mark */}
           <div className="absolute top-0 left-0 text-9xl text-blue-200 opacity-50 transform -translate-x-8 -translate-y-12 pointer-events-none">
-            "
+            &ldquo;
           </div>
           
           {/* Testimonial carousel */}

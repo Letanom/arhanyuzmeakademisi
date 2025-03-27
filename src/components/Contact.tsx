@@ -52,32 +52,6 @@ export default function Contact() {
     });
   };
 
-  const validateForm = () => {
-    const tempErrors: Record<string, string> = {};
-    let isValid = true;
-
-    if (!formData.name.trim()) {
-      tempErrors.name = "İsim gerekli";
-      isValid = false;
-    }
-
-    if (!formData.email.trim()) {
-      tempErrors.email = "E-posta gerekli";
-      isValid = false;
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      tempErrors.email = "Geçerli bir e-posta adresi girin";
-      isValid = false;
-    }
-
-    if (!formData.message.trim()) {
-      tempErrors.message = "Mesaj gerekli";
-      isValid = false;
-    }
-
-    setErrors(tempErrors);
-    return isValid;
-  };
-
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
