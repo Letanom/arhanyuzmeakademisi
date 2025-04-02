@@ -12,28 +12,34 @@ const teamData = [
     image: "/images/atahan.jpg",
   },
   {
+    name: "Sevag Balcı",
+    role: "Yüzme Antrenörü",
+    bio: "Yüzme kariyerim boyunca edindiğim bilgi ve deneyimleri, antrenör yardımcısı olarak sporculara aktarıyor ve onların gelişimine katkı sağlıyorum. Amacım, yüzmeyi sevdirerek yeni yetenekler yetiştirmek ve her seviyedeki yüzücünün potansiyelini en iyi şekilde ortaya çıkarmasına yardımcı olmaktır.",
+    image: "/images/sevag.jpg",
+  },
+  {
     name: "Egehan",
     role: "Fizyo Terapist",
     bio: "Fizyoterapist olarak, medikal yüzme programlarımızla kas-iskelet sistemi rahatsızlıkları ve spor sakatlıkları için kişiye özel rehabilitasyon sunuyorum. Suyun doğal iyileştirici gücüyle hareket kabiliyetinizi artırmak ve ağrılarınızı azaltmak için buradayım!",
-    image: "/team/selin.jpg",
+    image: "",
   },
   {
     name: "Esma",
     role: "Yetişkin Program Antrenörü",
     bio: "Hiç yüzme bilmeyen veya sudan korkan yetişkinlere özel eğitim veriyor. Sabırlı ve anlayışlı yaklaşımıyla suya güven oluşturuyor.",
-    image: "/team/mehmet.jpg",
+    image: "",
   },
   {
     name: "Mert",
     role: "Yarış Takımı Antrenörü",
     bio: "Yarış takımımızı çalıştıran eski üniversite yüzücüsü. Teknik gelişim, yarış stratejisi ve performans antrenmanlarına odaklanıyor.",
-    image: "/team/zeynep.jpg",
+    image: "",
   },
   {
     name: "Rabia",
     role: "Yarış Takımı Antrenörü",
     bio: "Yarış takımımızı çalıştıran eski üniversite yüzücüsü. Teknik gelişim, yarış stratejisi ve performans antrenmanlarına odaklanıyor.",
-    image: "/team/zeynep.jpg",
+    image: "",
   },
 ];
 
@@ -96,7 +102,7 @@ export default function Team() {
                   <h3 className="text-xl font-bold text-white">{member.name}</h3>
                   <p className="text-blue-200">{member.role}</p>
                 </div>
-                {member.name === "Atahan Arhan" ? (
+                {member.image ? (
                   <Image
                     src={member.image}
                     alt={member.name}
