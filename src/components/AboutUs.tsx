@@ -103,7 +103,7 @@ export default function AboutUs() {
               <div className="absolute inset-0 opacity-20">
                 <Image
                   src="/images/egitim.jpg"
-                  alt="Eğitim Mükemelliği"
+                  alt="Arhan Yüzme Akademisi - Eğitim Mükemelliği ve Profesyonel Yüzme Eğitimi"
                   fill
                   className="object-cover"
                 />

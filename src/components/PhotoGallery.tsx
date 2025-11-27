@@ -6,39 +6,39 @@ import Image from "next/image";
 const photos = [
   {
     id: 1,
-    src: "/images/slider1.jpg",
-    alt: "Yüzme Eğitimi",
+    src: "/images/arhan-yuzme-akademisi-profesyonel-egitim-1.jpg",
+    alt: "Arhan Yüzme Akademisi - Profesyonel Yüzme Eğitimi ve Antrenmanları",
     category: "Eğitim"
   },
   {
     id: 2,
-    src: "/images/slider2.jpg",
-    alt: "Profesyonel Yüzme",
+    src: "/images/arhan-yuzme-akademisi-profesyonel-egitim-2.jpg",
+    alt: "Arhan Yüzme Akademisi - Profesyonel Yüzme Eğitmenleri ve Teknikler",
     category: "Profesyonel"
   },
   {
     id: 3,
-    src: "/images/slider3.jpg",
-    alt: "Yüzme Teknikleri",
-    category: "Teknik"
+    src: "/images/arhan-yuzme-akademisi-cocuk-programi.jpg",
+    alt: "Arhan Yüzme Akademisi - Çocuklar için Yüzme Programı ve Güvenli Öğrenme",
+    category: "Çocuk"
   },
   {
     id: 4,
-    src: "/images/slider4.jpg",
-    alt: "Yüzme Antrenmanı",
-    category: "Antrenman"
+    src: "/images/arhan-yuzme-akademisi-yetiskin-dersleri.jpg",
+    alt: "Arhan Yüzme Akademisi - Yetişkinler için Yüzme Dersleri ve Teknik Gelişim",
+    category: "Yetişkin"
   },
   {
     id: 5,
-    src: "/images/slider5.jpg",
-    alt: "Yüzme Yarışı",
-    category: "Yarış"
+    src: "/images/arhan-yuzme-akademisi-tesisler.jpg",
+    alt: "Arhan Yüzme Akademisi - Modern Tesisler ve Eğitim Ortamı",
+    category: "Tesis"
   },
   {
     id: 6,
-    src: "/images/slider6.jpg",
-    alt: "Yüzme Kulübü",
-    category: "Kulüp"
+    src: "/images/arhan-yuzme-akademisi-basari-hikayeleri.jpg",
+    alt: "Arhan Yüzme Akademisi - Başarı Hikayeleri ve Ödüller",
+    category: "Başarı"
   }
 ];
 

@@ -105,7 +105,7 @@ export default function Team() {
                 {member.image ? (
                   <Image
                     src={member.image}
-                    alt={member.name}
+                    alt={`${member.name} - ${member.role} - Arhan Yüzme Akademisi`}
                     fill
                     className="object-cover"
                   />

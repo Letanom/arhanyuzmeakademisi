@@ -199,8 +199,9 @@ export default function Programs() {
                 </h3>
                 <p className="text-gray-600 mb-6">{program.description}</p>
                 <a
-                  href="#contact"
+                  href="#iletisim"
                   className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 transition-colors"
+                  title="Arhan Yüzme Akademisi - Detaylı Bilgi İçin İletişime Geçin"
                 >
                   Daha Fazla Bilgi
                   <svg

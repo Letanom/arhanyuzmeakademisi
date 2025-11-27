@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import Script from "next/script";
 
 export default function Hero() {
   const [bubbles, setBubbles] = useState<Array<{
@@ -102,7 +103,7 @@ export default function Hero() {
             <div className="relative w-full h-full">
               <Image
                 src="/images/logo.jpg"
-                alt="Arhan Yüzme Akademisi Logo"
+                alt="Arhan Yüzme Akademisi - Profesyonel Yüzme Eğitimi"
                 fill
                 sizes="192px"
                 style={{ objectFit: 'cover' }}
@@ -144,6 +145,77 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
+      
+      {/* Structured Data */}
+      <Script
+        id="organization-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Arhan Yüzme Akademisi",
+            "url": "https://www.arhanyuzmeakademisi.com",
+            "logo": "https://www.arhanyuzmeakademisi.com/images/logo.jpg",
+            "sameAs": [
+              // Add your social media links here
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+90 543 631 54 84",
+              "contactType": "Müşteri Hizmetleri",
+              "availableLanguage": "tr"
+            }
+          })
+        }}
+      />
+      
+      <Script
+        id="local-business-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Arhan Yüzme Akademisi",
+            "image": "https://www.arhanyuzmeakademisi.com/images/logo.jpg",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Merter, Bakırköy, Ataköy",
+              "addressLocality": "İstanbul",
+              "addressCountry": "TR"
+            },
+            "telephone": "+90 543 631 54 84",
+            "email": "arhanswim@gmail.com",
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "21:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "20:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Sunday",
+                "opens": "10:00",
+                "closes": "18:00"
+              }
+            ]
+          })
+        }}
+      />
     </div>
   );
 } 
